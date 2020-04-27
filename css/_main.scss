@@ -2,7 +2,7 @@
   background-image: url(../img/banner.png);
   background-position: center center;
   background-repeat: no-repeat;
-  height: 960px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   .banner-info{
@@ -30,10 +30,12 @@
 }
 
 .content-about{
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
   @include text-color-size(#000000,24px);
   padding-top: 64px;
-  padding-bottom: 59px;
+  padding-bottom: 56px;
   h2{
     font-size: 64px;
     line-height: 75px;
@@ -43,6 +45,9 @@
     display: block;
     margin-bottom: 24px;
     margin:0 auto 24px;
+  }
+  ul{
+    text-align: center;
   }
   li{
     line-height: 42px;
@@ -56,7 +61,7 @@
     margin: 32px auto 0;
     flex-direction: column;
     align-items: center;
-    p{
+    li{
       margin-top: 32px;
       position: relative;
       .dot{
@@ -91,6 +96,7 @@
   }
   .info-brand{
     margin-bottom: 48px;
+    font-size:20px;
   }
   img{
     display:block;
@@ -150,9 +156,11 @@
     @include text-color-size(#FFFFFF,64px);
     line-height: 75px;
   }
-  p{
+  a{
     margin-top: 8px;
     @include text-color-size(#FFFFFF,24px);
     line-height: 36px;
+    text-decoration:none;
+    display: block;
   }
 }

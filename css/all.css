@@ -74,7 +74,7 @@ body {
   background-image: url(../img/banner.png);
   background-position: center center;
   background-repeat: no-repeat;
-  height: 960px;
+  height: 100vh;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -106,11 +106,20 @@ body {
       justify-content: space-around; }
 
 .content-about {
-  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #000000;
   font-size: 24px;
   padding-top: 64px;
-  padding-bottom: 59px; }
+  padding-bottom: 56px; }
   .content-about h2 {
     font-size: 64px;
     line-height: 75px;
@@ -119,6 +128,8 @@ body {
     display: block;
     margin-bottom: 24px;
     margin: 0 auto 24px; }
+  .content-about ul {
+    text-align: center; }
   .content-about li {
     line-height: 42px; }
   .content-about li:last-child {
@@ -134,10 +145,10 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .content-about .info-experience p {
+    .content-about .info-experience li {
       margin-top: 32px;
       position: relative; }
-      .content-about .info-experience p .dot {
+      .content-about .info-experience li .dot {
         width: 22px;
         height: 22px;
         border-radius: 50%;
@@ -164,7 +175,8 @@ body {
     line-height: 42px;
     margin-bottom: 32px; }
   .content-mybrand .info-brand {
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    font-size: 20px; }
   .content-mybrand img {
     display: block;
     margin: 0 auto 40px; }
@@ -225,8 +237,10 @@ body {
     color: #FFFFFF;
     font-size: 64px;
     line-height: 75px; }
-  .footer-contact p {
+  .footer-contact a {
     margin-top: 8px;
     color: #FFFFFF;
     font-size: 24px;
-    line-height: 36px; }
+    line-height: 36px;
+    text-decoration: none;
+    display: block; }
